@@ -1,0 +1,29 @@
+html{
+	font-size: 62.5%;
+}
+body{
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:14px;
+}
+body,ul,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,img,div,dl,dt,dd,i{
+	margin:0;
+	padding:0;
+}
+a{
+	text-decoration: none;
+	color:#333;
+	pointer:cursor;
+}
+a:hover{
+	color: #17a3fa;
+}
+img{
+	border:none;
+	width: 100%;
+}
+li{
+	list-style: none;
+}
+
+
+
