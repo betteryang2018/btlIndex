@@ -2,6 +2,15 @@
 html{
 	font-size: 62.5%;
 }
+
+body,ul,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,img,div,dl,dt,dd,i{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	width: 100%;
+}
 @media (max-width: 1200px){
 	html{
 		font-size: 9px;
@@ -16,14 +25,6 @@ html{
 	html{
 		font-size: 8px;
 	}
-}
-body{
-	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size:14px;
-}
-body,ul,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,img,div,dl,dt,dd,i{
-	margin:0;
-	padding:0;
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-weight: 500;
@@ -243,6 +244,11 @@ img{
 	margin-left:55px;
 }
 
+
+.header-con1 .headBar2 .rightPart .menuList a{
+	font-size: 1.6rem;
+}
+
 .header-con1 .headBar2 .rightPart .menuList ul{
 	display: none;
 }
@@ -253,11 +259,13 @@ img{
 
 /* -----------------pc header 768px-992px-----------------------*/
 
-@media (min-width: 768px) and (max-width: 992px){
+@media (min-width: 768px) and (max-width: 991px){
 
 .mobile-con{
 	display: none !important;
 }
+
+
 
 .header-con1 .headBar1 .container{
 	width:768px;
@@ -279,7 +287,7 @@ img{
 }
 
 .header-con1 .headBar2 .rightPart .menuList>li{
-	margin-left:30px;
+	margin-left:25px;
 }
 
 .topRight .search input{
@@ -361,7 +369,7 @@ img{
 
 .main .data .row .lattice .num{
 	font-size:3rem;
-	margin:1.5rem 0;
+	margin:1.4rem 0;
 }
 
 .main .data .row .lattice .text{
@@ -379,7 +387,7 @@ img{
 	height: 130px;
 }
 
-@media (max-width:768px){
+@media (max-width:767px){
 .main .data .data-con .row{
 	width:100%;
 }
@@ -415,7 +423,7 @@ img{
 }
 
 .intro1 .textCon{
-	width:80%;
+	with:80%;
 	font-size:1.2rem;
 	line-height: 1.8rem;
 	margin:10px 0;
@@ -431,11 +439,12 @@ img{
 	display: none;
 }
 
-@media (max-width:767px){
+@media (max-width:768px){
 .intro1 .sec2{
 	display: block;
 }
 .intro1 .container{
+	width:100%;
 	background:#fff;
 	margin:0 auto;
 	background-size:100%;
@@ -450,20 +459,39 @@ img{
 }
 
 .intro1 .sec1 h2{
-	font-size: 2rem;
-}
-
-}
-
-@media (min-width:768px) and (max-width:992px){
-.intro1 .container{
-	width: 768px;
+	font-size: 2.5rem;
+	line-height: 3rem;
 }
 }
 
-@media (min-width:992px) and (max-width:1200px){
+@media (width:768px){
 .intro1 .textCon{
-	font-size:1.4rem;
+	width:100%;
+	font-size:1.6rem;
+}
+.intro1 .hhf{
+	display: none;
+}
+
+.intro1 h1{
+	font-size: 2.6rem;
+}
+
+}
+
+@media (min-width:769px) and (max-width:992px){
+.intro1 {
+	width: 768px;
+	margin:0 auto;
+}
+.intro1 .hhf{
+	display: none;
+}
+}
+
+@media (min-width:993px) and (max-width:1200px){
+.intro1 .textCon{
+	font-size:1.6rem;
 }
 .intro1 .container{
 	width: 992px;
@@ -472,7 +500,7 @@ img{
 
 @media (min-width:1200px){
 .intro1 .textCon{
-	font-size:1.4rem;
+	font-size:1.6rem;
 }
 .intro1 .container{
 	width: 1200px;
@@ -578,7 +606,7 @@ img{
 	clear:both;
 }
 
-@media (min-width: 769px){
+@media (min-width: 768px){
 .main .product .pro-sec2 .row .pro{
 	width:21.5%;
 	margin:0 1.5% 1.5%;
