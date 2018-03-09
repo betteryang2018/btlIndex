@@ -423,7 +423,7 @@ img{
 }
 
 .intro1 .textCon{
-	with:80%;
+	width:80%;
 	font-size:1.2rem;
 	line-height: 1.8rem;
 	margin:10px 0;
