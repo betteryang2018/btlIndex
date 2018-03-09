@@ -412,7 +412,7 @@ img{
 
 .intro1{
 	width: 90%;
-	margin:0 atuo;
+	margin:0 auto;
 	background: url(../images/about-bg_02.jpg) no-repeat;
 	background-size: cover;
 	padding:5%;
@@ -436,7 +436,7 @@ img{
 
 .intro1 .container{
 	background:#fff url(../images/about2_03.jpg) no-repeat right center;
-	background-size: 90% 100%;
+	background-size: cover;
 	margin:0 auto;
 }
 
@@ -482,7 +482,7 @@ img{
 
 @media (width:768px){
 .intro1 .textCon{
-	width:96%;
+	width:90%;
 }
 .intro1 .hhf{
 	display: none;
@@ -492,7 +492,7 @@ img{
 
 @media (min-width:769px) and (max-width:992px){
 .intro1 {
-	width: 768px;
+	width: 760px;
 	margin:0 auto;
 }
 
@@ -511,7 +511,8 @@ img{
 	font-size:1.4rem;
 }
 .intro1 .container{
-	width: 992px;
+	width: 900px;
+	margin:0 auto;
 }
 
 .intro1 .container .sec1 h1{
@@ -529,7 +530,8 @@ img{
 	font-size:1.6rem;
 }
 .intro1 .container{
-	width: 1200px;
+	width: 1198px;
+	margin:0 auto;
 }
 
 .intro1 .container .sec1 h1{
@@ -660,7 +662,6 @@ img{
 	background: url(../images/about_02.jpg) no-repeat;
 	background-size: cover;
 	padding-bottom: 3%;
-	border-image: 
 }
 .main .intro2 .container{
 	width: 90%;
