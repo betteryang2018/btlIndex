@@ -11,21 +11,7 @@ body{
 	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
 	width: 100%;
 }
-@media (max-width: 1200px){
-	html{
-		font-size: 9px;
-	}
-}
-@media (max-width: 992px){
-	html{
-		font-size: 7px;
-	}
-}
-@media (max-width: 768px){
-	html{
-		font-size: 8px;
-	}
-}
+
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-weight: 500;
 }
@@ -111,7 +97,7 @@ img{
 	float:left;
 	margin-right: 20px;
 	word-spacing: 5px;
-
+	font-size: 1.4rem;
 }
 
 .header .mobile-con .rightPart .lang a:hover,
@@ -241,12 +227,12 @@ img{
 
 .header-con1 .headBar2 .rightPart .menuList>li{
 	float:left;
-	margin-left:55px;
+	margin-left:3%;
+}
 }
 
-
 .header-con1 .headBar2 .rightPart .menuList a{
-	font-size: 1.6rem;
+	font-size: 1.4rem;
 }
 
 .header-con1 .headBar2 .rightPart .menuList ul{
@@ -265,6 +251,9 @@ img{
 	display: none !important;
 }
 
+.header-con1 .headBar2 .rightPart .menuList a{
+	font-size: 1.4rem;
+}
 
 
 .header-con1 .headBar1 .container{
@@ -277,17 +266,13 @@ img{
 }
 
 .header-con1 .headBar1 .topRight{
-	margin-left:30%;
+	margin-left:25%;
 }
 
 .header-con1 .headBar2 .container{
 	width: 768px;
 	margin:0 auto;
 	font-size: 1rem;
-}
-
-.header-con1 .headBar2 .rightPart .menuList>li{
-	margin-left:25px;
 }
 
 .topRight .search input{
@@ -303,6 +288,14 @@ img{
 @media (min-width: 992px) and (max-width: 1200px){
 .mobile-con{
 	display: none !important;
+}
+
+.header-con1 .headBar2 .rightPart .menuList a{
+	font-size: 1.6rem;
+}
+
+.header-con1 .headBar2 .rightPart .menuList>li{
+	margin-left:5%;
 }
 
 .topRight .search input{
@@ -344,6 +337,10 @@ img{
 	margin-left:8px;
 }
 
+.header-con1 .headBar2 .rightPart .menuList>li{
+	margin-left:6%;
+}
+
 }
 
 /* ----------------- main -----------------------*/
@@ -368,8 +365,8 @@ img{
 }
 
 .main .data .row .lattice .num{
-	font-size:3rem;
-	margin:1.4rem 0;
+	font-size:3.4rem;
+	margin:1rem 0;
 }
 
 .main .data .row .lattice .text{
@@ -392,41 +389,49 @@ img{
 	width:100%;
 }
 
+.main .data .row .lattice .num{
+	font-size:3.4rem;
+	margin:1rem 0;
+}
+
 .main .data .data-con .row .lattice{
 	width:33%;
 }
 }
 
+
+@media (min-width:768px){
+.main .data .row .lattice .num{
+	font-size:4rem;
+	margin:1.2rem 0;
+}
+
+}
+
 /* ----------------intro1------------------ */
 
 .intro1{
+	width: 90%;
+	margin:0 atuo;
 	background: url(../images/about-bg_02.jpg) no-repeat;
 	background-size: cover;
-	padding:5% 15px;
+	padding:5%;
 }
 
 .intro1 .sec1{
-	padding:30px;
+	padding:7% 5%;
 	background: -webkit-linear-gradient(to right, #fff 30%,transparent);
 	background: -o-linear-gradient(to right, #fff 30%,transparent);
 	background: -moz-linear-gradient(to right, #fff 30%,transparent);
 	background: linear-gradient(to right, #fff 30%,transparent);
-	width: 50%;
-}
-
-.intro1 .sec1 h1{
-	font-size: 3.8rem;
-}
-
-.intro1 .sec1 h2{
-	font-size: 2.8rem;
+	width: 40%;
 }
 
 .intro1 .textCon{
-	width:80%;
-	font-size:1.2rem;
+	width: 90%;
+	font-size:1.6rem;
 	line-height: 1.8rem;
-	margin:10px 0;
+	padding:10px 0;
 }
 
 .intro1 .container{
@@ -437,6 +442,12 @@ img{
 
 .intro1 .sec2{
 	display: none;
+}
+
+@media (min-width:321px){
+	.intro1 .hhf{
+	display: none;
+}
 }
 
 @media (max-width:768px){
@@ -453,28 +464,27 @@ img{
 	width:100%;
 	margin-bottom: -15px;
 }
+.intro1 .textCon{
+	font-size:1.3rem;
+	line-height: 1.6rem;
+}
 
 .intro1 .sec1 h1{
-	font-size: 3rem;
+	font-size: 2.4rem;
 }
 
 .intro1 .sec1 h2{
-	font-size: 2.5rem;
+	font-size: 2rem;
 	line-height: 3rem;
 }
 }
 
 @media (width:768px){
 .intro1 .textCon{
-	width:100%;
-	font-size:1.6rem;
+	width:96%;
 }
 .intro1 .hhf{
 	display: none;
-}
-
-.intro1 h1{
-	font-size: 2.6rem;
 }
 
 }
@@ -484,27 +494,57 @@ img{
 	width: 768px;
 	margin:0 auto;
 }
-.intro1 .hhf{
-	display: none;
+
+.intro1 .sec1 h1{
+	font-size: 3.8rem;
+}
+
+.intro1 .sec1 h2{
+	font-size:2.8rem;
+	line-height: 3.8rem;
 }
 }
 
 @media (min-width:993px) and (max-width:1200px){
 .intro1 .textCon{
-	font-size:1.6rem;
+	font-size:1.4rem;
 }
 .intro1 .container{
 	width: 992px;
 }
+
+.intro1 .container .sec1 h1{
+	font-size: 3.6rem;
+}
+
+.intro1 .container .sec1 h2{
+	font-size: 2.8rem;
+	line-height: 3.8rem;
+}
 }
 
 @media (min-width:1200px){
-.intro1 .textCon{
+.sec1 .textCon{
 	font-size:1.6rem;
 }
 .intro1 .container{
 	width: 1200px;
 }
+
+.intro1 .container .sec1 h1{
+	font-size: 3.6rem;
+}
+
+.intro1 .container .sec1 h2{
+	font-size: 2.8rem;
+	line-height: 3.8rem;
+}
+}
+
+@media (min-width:1400px){
+	.intro1 .container .sec1{
+		width: 50%;
+	}
 }
 
 /* ----------------product------------------ */
@@ -546,6 +586,7 @@ img{
 	margin:0 auto;
 	background-color: #fff;
 	z-index: 2;
+	font-size: 1.4rem;
 }
 
 .moreBtn:hover{
@@ -617,7 +658,7 @@ img{
 .main .intro2{
 	background: url(../images/about_02.jpg) no-repeat;
 	background-size: cover;
-	padding:5% 0;
+	padding-bottom: 3%;
 	border-image: 
 }
 .main .intro2 .container{
@@ -779,7 +820,7 @@ img{
 /* ----------------News------------------ */
 
 .main .news{
-	margin:40px 15px;
+	margin:15px;
 }
 
 .main .news .sec1{
@@ -926,6 +967,7 @@ img{
 	border-bottom:1px solid #999;
 	height: 50px;
 	line-height: 50px;
+	font-size: 1.4rem;
 }
 
 .footer .mobile-con .outerChain{
