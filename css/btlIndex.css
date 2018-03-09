@@ -362,6 +362,7 @@ img{
 	border-right:1px solid #d7d7d7;
 	border-bottom: 1px solid #d7d7d7;
 	background:#F6F6F6;
+	box-sizing: border-box;
 }
 
 .main .data .row .lattice .num{
@@ -380,7 +381,7 @@ img{
 }
 
 .main .data .data-con .row .lattice{
-	width:16.5%;
+	width:16.66666%;
 	height: 130px;
 }
 
@@ -395,7 +396,7 @@ img{
 }
 
 .main .data .data-con .row .lattice{
-	width:33%;
+	width:33.333333%;
 }
 }
 
@@ -664,9 +665,10 @@ img{
 
 .main .product .pro-sec2 .row .pro{
 	float:left;
-	width:43%;
+	width:45%;
+	margin:2%;
 	border:1px solid #f1f1f1;
-	margin:3%;
+	border-size:border-box;
 }
 
 .main .product .pro-sec2 .row .pro p{
@@ -693,7 +695,6 @@ img{
 	padding:3% 0;
 }
 .main .intro2 .container{
-	width: 90%;
 	margin:10px auto;
 	background: #f6f6f6;
 }
@@ -765,7 +766,6 @@ img{
 	height: auto;
 	width:22%; 
 	border: 2px solid #17a3fa;
-	box-sizing:border-box; 
 }
 
 
@@ -775,6 +775,7 @@ img{
 	background: #fff;
 }	
 .main .intro2 .container{
+	width: 90%;
 	background: none;
 }	
 
@@ -798,7 +799,7 @@ img{
 
 
 @media(min-width: 768px) and (max-width:992px){
-.main .intro2 .container{
+.container{
 	width: 750px;
 	margin:0 auto;
 }
@@ -811,7 +812,7 @@ img{
 }
 
 @media(min-width: 993px) and (max-width:1200px){
-.main .intro2 .container{
+.container{
 	width: 970px;
 	margin:0 auto;
 }
@@ -819,13 +820,19 @@ img{
 }
 
 @media (min-width: 1200px){
-.main .intro2 .container{
+.container{
 	width: 1200px;
 	margin:0 auto;
 }
 
 .sec1 .textCon{
 	font-size: 1.5rem;
+}
+
+
+.main .intro2 .sec{
+	height: 350px;
+	width:45%;
 }
 
 .main .intro2 .sec1 .topTit h2{
@@ -929,6 +936,19 @@ img{
 }
 
 @media (min-width: 768px){
+.main .news .sec2 .img{
+	width:32%;
+	float:left;
+	padding-right:2%;
+}	
+.main .news .sec2 p{
+	width:66%;
+	float:right;
+}
+.main .news .sec3{
+	clear:both;
+	padding:20px 0;
+}
 .main .news .sec3 .newShow{
 	width:50%;
 	float:left;
