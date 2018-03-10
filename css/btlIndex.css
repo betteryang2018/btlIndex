@@ -969,7 +969,7 @@ img{
 	display: block;
 	float:left;
 	width:11%;
-	padding:4% 0 0 4%;
+	margin: 4% 2% 0;
 }
 
 .main .news img{
