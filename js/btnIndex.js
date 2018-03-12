@@ -1,19 +1,26 @@
+// navBar 下拉菜单
 $(document).ready(function(){
-	// navBar 下拉菜单
 	$('#dropDownBtn').click(function(){
 		$('#navBarCls').slideToggle("500");
 	})
+})
+
+// navBar 下拉菜单 下拉选项
+$(document).ready(function(){
 	$('.dropdown').click(function(){
-		$('.dropdown ul').slideToggle("100");
+		$('ul', this).slideToggle("100");
 	})
-	// floatTools
+})
+
+// floatTools
+$(document).ready(function(){
 	$('#floatTools_show').click(function(){
 		$(this).css("display","none");
-		$('#floatTools_hide').css("display","block");
+		$('#floatTools_hide').animate({width:'toggle'},200,);
 	})
 
 	$('#floatTools_hide').click(function(){
 		$(this).css("display","none");
-		$('#floatTools_show').css("display","block");
+		$('#floatTools_show').animate({width:'toggle'},30);
 	})
 })
