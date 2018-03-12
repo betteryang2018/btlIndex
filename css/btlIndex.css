@@ -1234,6 +1234,12 @@ img{
 }
 }
 
+/* footer 下拉菜单 */
+
+footer .footer_navBarCls li{
+	background: #edf2f8;
+}
+
 
 /* ----------------return top------------------ */
 
