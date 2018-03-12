@@ -71,12 +71,11 @@ img{
 
 .header .mobile-con{
 	display: block;
-	padding:3px 15px;
 	position: fixed;
-	height: 47px;
+	height: 53px;
 	width: 100%;
 	background: #fff;
-	line-height: 47px;
+	line-height: 53x;
 	border-bottom:1px solid #d6d6d6;
 }
 
@@ -95,7 +94,7 @@ img{
 
 .header .mobile-con .rightPart .lang{
 	float:left;
-	margin-right: 20px;
+	margin-right:10px;
 	word-spacing: 5px;
 	font-size: 1.4rem;
 }
@@ -106,15 +105,14 @@ img{
 }
 
 .header .mobile-con .rightPart button{
-	width:43px;
-	height:33px;
+	width:42px;
+	height:32px;
 	border:1px solid #DFDFDF;
 	border-radius: 5px;
 	background: #fff;
 	position: relative;
 	vertical-align: middle;
 	cursor: pointer;
-	margin-right: 30px;
 }
 
 .header .mobile-con .rightPart button:hover{
@@ -127,6 +125,73 @@ img{
 	display: block;
 	margin:2px 0px 4px 3px;
 }
+
+.header .mobile-con .navBar{
+	padding:3px 15px;
+}
+
+.header .mobile-con .navBar-collapse{
+	clear:left;
+	background: #fff;
+	padding:3px 15px;
+	font-size: 1.4rem;
+	line-height: 3.2rem;
+	display: none;
+}
+
+.header .mobile-con .navBar-collapse a:hover{
+	color:#333;
+}
+
+
+.header .mobile-con .navBar-collapse .menu form{
+	border-top:1px solid #e7e7e7;
+	border-bottom:1px solid #e7e7e7;
+	margin:0 -15px;
+	padding:10px 15px;
+}
+
+.header .mobile-con .navBar-collapse .menu form .topLine{
+	border-top:1px solid #e7e7e7;
+	margin:0 -15px;
+	padding-bottom: 10px;
+}
+
+.header .mobile-con .navBar-collapse .menu input{
+	height: 34px;
+	border-radius: 4px;
+	border:1px solid #ccc;
+	background: #fff;
+	font-size: 1.4rem;
+	padding:0 1rem;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.075) inset;
+}
+
+.header .mobile-con .navBar-collapse .menu .srhBtn{
+	width:100%;
+	color:#999;
+}
+
+.header .mobile-con .navBar-collapse .menuList{
+	padding:0.8rem 0;
+}
+
+.header .mobile-con .navBar-collapse .menuList ul{
+	display: none;
+	padding-left: 1rem;
+}
+
+.header .mobile-con .navBar-collapse .menuList .triangle{
+	color:#333;
+	width:0;
+	height: 0;
+	border-top:4px solid;
+	border-right:4px solid transparent;
+	border-left:4px solid transparent;
+	position: relative;
+	top:11px;
+}
+
 }
 
 /* -----------------pc header common css-----------------------*/
@@ -986,12 +1051,23 @@ img{
 
 /* ----------------floatTools------------------ */
 
-#floatTools{
+#floatTools_show{
 	position:fixed;
 	right:0px;
 	top:200px;
 	width:30px;
-	height:120px;
+	height:135px;
+	background: url(../images/skype_03.png) no-repeat;
+	index:99;
+}
+
+#floatTools_hide{
+	position:fixed;
+	display: none;
+	right:0px;
+	top:200px;
+	width:200px;
+	height:135px;
 	background: url(../images/skype_03.png) no-repeat;
 	index:99;
 }
