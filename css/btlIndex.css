@@ -1058,7 +1058,7 @@ img{
 	width:30px;
 	height:135px;
 	background: url(../images/skype_03.png) no-repeat;
-	index:99;
+	z-index:99;
 }
 
 #floatTools_hide{
@@ -1069,7 +1069,7 @@ img{
 	width:200px;
 	height:135px;
 	background: url(../images/skype_03.png) no-repeat;
-	index:99;
+	z-index:99;
 }
 
 /* ----------------mobile footer------------------ */
@@ -1140,6 +1140,12 @@ img{
 	opacity: 0.7;
 	line-height: 2rem;
 }
+
+/* footer 下拉菜单 */
+.footer-con2 .wrap ul{
+	display: none;
+}
+
 }
 
 /* ----------------pc footer------------------ */
@@ -1233,13 +1239,6 @@ img{
 	width: 1200px;
 }
 }
-
-/* footer 下拉菜单 */
-
-footer .footer_navBarCls li{
-	background: #edf2f8;
-}
-
 
 /* ----------------return top------------------ */
 
