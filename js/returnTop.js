@@ -11,8 +11,3 @@ $(window).bind('scroll',function(){
 $('#returnTop').click(function(){
 	$('body').animate({scrollTop:0});
 })
-
-// 解决手机端click事件延迟问题
-$(function() {    
-    FastClick.attach(document.body);    
-});  
