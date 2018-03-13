@@ -1146,6 +1146,10 @@ img{
 	clear:both;
 }
 
+.footer-con2 .wrap ul{
+	display: none;
+}
+
 .footer-con2 .wrap ul a{
 	display: block;
 	color:#333;
