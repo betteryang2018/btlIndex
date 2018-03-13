@@ -1112,7 +1112,6 @@ img{
 .footer .mobile-con .nav,
 .footer .mobile-con .contact{
 	border-bottom:1px solid #999;
-	height: 50px;
 	line-height: 50px;
 	font-size: 1.4rem;
 }
@@ -1142,9 +1141,22 @@ img{
 }
 
 /* footer 下拉菜单 */
-.footer-con2 .wrap ul{
-	display: none;
+.footer-con2 .nav,
+.footer-con2 .contact{
+	clear:both;
 }
+
+.footer-con2 .wrap ul a{
+	display: block;
+	color:#333;
+	background: #edf2f8;
+	border-bottom:1px solid #aaa;
+	font-size: 1.4rem; 
+	padding:12px 24px;
+	line-height: 1.6rem;
+}
+
+
 
 }
 
