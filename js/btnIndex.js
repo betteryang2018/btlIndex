@@ -35,3 +35,5 @@ $(document).ready(function(){
 		$('#floatTools_show').stop().animate({width:'toggle'},30);
 	})
 })
+
+// pc-navBar 下拉菜单

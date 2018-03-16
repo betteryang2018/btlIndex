@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 	<title>btlIndex</title>
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
 	<link rel="stylesheet" type="text/css" href="css/btlIndex.css">
 </head>
 <body>
@@ -45,43 +46,74 @@
 				<div class="rightPart menu">
 					<ul class="menuList">
 						<li>
-							<a href="##">
-								About Us
-								<span class="triangle"></span>
-							</a>
-							<ul>
+							<div class="pc_dropNav">
+								<a href="##">
+									About Us
+									<span class="triangle"></span>
+								</a>
+							</div>
+							<ul class="dropMenuList">
+								<li class="navbg">&nbsp;</li>
 								<li><a href="##">Company Profile</a></li>
 								<li><a href="##">Honor Certificate</a></li>
 							</ul>
 						</li>
 						<li>
-							<a href="##">
-								Services
-								<span class="triangle"></span>
-							</a>
+							<div class="pc_dropNav">
+								<a href="##">
+									Products
+								</a>
+							<div>
+							<ul class="dropMenuList">
+								<li>&nbsp;</li>
+							</ul>
 						</li>
-						<li><a href="##">Products</a></li>
 						<li>
-							<a href="##">
-								Production<i class="hdText">Capacity</i>
-								<span class="triangle"></span>
-							</a>
+							<div class="pc_dropNav">
+								<a href="##">
+									Production<i class="hdText">Capacity</i>
+									<span class="triangle"></span>
+								</a>
+						    </div>
 							<ul>
+								<li class="navbg">&nbsp;</li>
 								<li><a href="##">Products</a></li>
 								<li><a href="##">Capacity</a></li>
 							</ul>
 						</li>
 						<li>
-							<a href="##">
-								News
-								<span class="triangle"></span>
-							</a>
+							<div class="pc_dropNav">
+								<a href="##">
+									News
+									<span class="triangle"></span>
+								</a>
+							</div>
 							<ul>
+								<li class="navbg">&nbsp;</li>
 								<li><a href="##">Comany News</a></li>
 								<li><a href="##">Industry News</a></li>
 							</ul>
 						</li>
-						<li><a href="##">Online Quotes</a></li>
+						<li>
+							<div class="pc_dropNav">
+								<a href="##">
+									Online Quotes
+								</a>
+							</div>
+							<ul class="dropMenuList">
+								<li class="navbg">&nbsp;</li>
+							</ul>
+						</li>
+						<li>
+							<div class="pc_dropNav">
+								<a href="##">
+									Contact Us
+								</a>
+							</div>
+							<ul class="dropMenuList">
+								<li class="navbg">&nbsp;</li>
+							</ul>
+						</li>
 					</ul>
 				</div>		
 				</div>
@@ -162,17 +194,55 @@
 	    </div>
 	</div>    
 	<div class="main">
-		<div class="slide">
-			<div class="pc-con slideImg pc-slideImg">
-				<img src="images/20180211100610461.jpg">
-			</div>
-			<div class="mobile-con slideImg mobile-slideImg">
-				<img src="images/20180211100535979.jpg">
-			</div>
-			<div class="prev" id="prev"></div>
-			<div class="next" id="next"></div>
-			<div class="dot" id="dot"></div>
+		<!-- pc-slide -->
+		<div class="swiper-container pc-con slideImg pc-slideImg">
+			<div class="swiper-wrapper">
+		        <div class="swiper-slide"><img src="images/20180211100610461.jpg"></div>
+		        <div class="swiper-slide"><img src="images/20180211100610461.jpg"></div>
+		        <div class="swiper-slide"><img src="images/20180211100610461.jpg"></div>
+   			</div>
+   			<!-- 分页器 -->
+   		    <div class="swiper-pagination"></div>
+    
+		    <!-- 导航按钮 -->
+		    <div class="swiper-button-prev"></div>
+		    <div class="swiper-button-next"></div>
 		</div>
+
+		<!-- mobile-slide -->
+		<div class="swiper-container mobile-con slideImg mobile-slideImg">
+			<div class="swiper-wrapper">
+		        <div class="swiper-slide"><img src="images/20180211100535979.jpg"></div>
+		        <div class="swiper-slide"><img src="images/20180211100535979.jpg"></div>
+		        <div class="swiper-slide"><img src="images/20180211100535979.jpg"></div>
+   			</div>
+   			<!-- 分页器 -->
+   		    <div class="swiper-pagination"></div>
+    
+		    <!-- 导航按钮 -->
+		    <div class="swiper-button-prev"></div>
+		    <div class="swiper-button-next"></div>
+		</div>
+			<!-- <div class="bd">
+				<ul class="pc-con slideImg pc-slideImg">
+					<li>
+						<a href="##">
+							<img src="images/20180211100610461.jpg">
+						</a>
+					</li>
+					<li><a href="##"></a></li>
+					<li><a href="##"></a></li>
+				</ul>
+				<ul class="mobile-con slideImg mobile-slideImg">
+					<li>
+						<a href="##">
+							<img src="images/20180211100535979.jpg">
+						</a>
+					</li>
+					<li><a href="##"></a></li>
+					<li><a href="##"></a></li>
+				</ul>
+			</div> -->
 		<div class="data">
 			<!---pc data mobile data-->
 			<div class="pc-data mobile-data data-con">
@@ -460,5 +530,26 @@
 <script src="js/jquery-3.2.1.min.js"></script>	
 <script src="js/btnIndex.js"></script>
 <script src="js/returnTop.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/scrollreveal.min.js"></script>
+<script> 
+	var mySwiper = new Swiper ('.swiper-container', {
+    autoplay:true,
+    direction:'horizontal',
+    loop: true,
+    speed:500,
+    
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  })        
+ </script>
 </body>
 </html>
