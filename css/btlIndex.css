@@ -77,6 +77,7 @@ img{
 	background: #fff;
 	line-height: 53x;
 	border-bottom:1px solid #d6d6d6;
+	z-index: 999;
 }
 
 .header .mobile-con .leftPart{

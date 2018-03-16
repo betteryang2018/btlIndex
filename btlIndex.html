@@ -533,23 +533,25 @@
 <script src="js/swiper.min.js"></script>
 <script src="js/scrollreveal.min.js"></script>
 <script> 
-	var mySwiper = new Swiper ('.swiper-container', {
-    autoplay:true,
-    direction:'horizontal',
-    loop: true,
-    speed:500,
-    
-    // 如果需要分页器
-    pagination: {
-      el: '.swiper-pagination',
-    },
-    
-    // 如果需要前进后退按钮
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  })        
+	$(document).ready(function(){
+		var mySwiper = new Swiper ('.swiper-container', {
+	    autoplay:true,
+	    direction:'horizontal',
+	    loop: true,
+	    speed:500,
+	    
+	    // 分页器
+	    pagination: {
+	      el: '.swiper-pagination',
+	    },
+	    
+	    // 前进后退按钮
+	    navigation: {
+	      nextEl: '.swiper-button-next',
+	      prevEl: '.swiper-button-prev',
+	    },
+	  })       
+	}) 
  </script>
 </body>
 </html>
