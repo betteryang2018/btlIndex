@@ -49,6 +49,10 @@ i{
 	font-style: normal;
 }
 
+.container{
+	overflow: hidden;
+}
+
 
 /* -----------------mobile header < 768px-----------------------*/
 
